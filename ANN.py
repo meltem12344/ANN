@@ -8,7 +8,7 @@ print(df.head()) # kontrol için pandas tan head fonksiyonu ile verinin ilk bir 
 
 df.drop(columns = ['CampaignID','RaisedAmount'], inplace= True ) # pandas tan drop fonksiyonu ile işe yaramayan özellikler çıkartıldı
 print(df.head())                                                   # peki işe yaramayanı hangi referansa göre belirledin?
-                                                                 # analizini yapmak istediğim şey şu: ! belirli özelliklere göre destekleyen kişi sayısını tahmin etmek !
+                                                                 # analizini yapmak istediğim şey şu: ! belirli özelliklere göre başarılı olup olmadığını tahmin etmek !
 
 print(df.isnull().sum()) # yine pandastan isnull fonksiyonunu çağırıyoruz, bu fonksiyon df nin her bir hücresinde eksik değer olup olmadığını sorgular,
                          # eksikse true eksik değilse false değeri döndürür isnull, sum fonksiyonu True değerlerini 1 olarak sayar ve her sütub için eksik değerlerin toplamını verir
